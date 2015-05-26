@@ -1,5 +1,5 @@
 <%= link_to "Nouvel article", new_article_path %>
-<% @articles.each do |article| %>
+<% @articles.reverse.each do |article| %>
   <div class="article">
     <h1 class="title">
       <%= article.title %>
@@ -8,7 +8,9 @@
       <%= article.subtitle %>
     </h3>
     <div class="content">
-      <%= article.content %>
+    <%= article.content %>
     </div>
+    <%= link_to 'Lire la suite', article_path(article) %>
+    <%= link_to 'Editer', edit_article_path(article) %>
   </div>
 <% end %>
