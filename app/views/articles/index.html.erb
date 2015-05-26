@@ -1,0 +1,14 @@
+<%= link_to "Nouvel article", new_article_path %>
+<% @articles.each do |article| %>
+  <div class="article">
+    <h1 class="title">
+      <%= article.title %>
+    </h1>
+    <h3 class="subtitle">
+      <%= article.subtitle %>
+    </h3>
+    <div class="content">
+      <%= article.content %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+<div class="article">
+	<h1>Nouvel article</h1>
+	<div class="formulaire">
+		<%= form_for :article, url: articles_path  do |f| %>
+		  <p>
+		    <%= f.label :titre %><br>
+		    <%= f.text_field :title %>
+		  </p>
+		 
+		  <p>
+		    <%= f.label :"sous-titre" %><br>
+		    <%= f.text_area :subtitle %>
+		  </p>
+
+		   <p>
+		    <%= f.label :texte %><br>
+		    <%= f.text_area :content %>
+		  </p>
+		 
+		  <p>
+		    <%= f.submit %>
+		  </p>
+		<% end %>
+	</div>
+</div>
