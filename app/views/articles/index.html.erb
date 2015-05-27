@@ -1,18 +1,36 @@
-<%= link_to "Nouvel article", new_article_path %>
-<% @articles.reverse.each do |article| %>
-  <div class="article">
-    <div class="date">
-      <%= article.created_at %>  
-    </div>
-    <h1 class="title">
-      <%= article.title %>
-    </h1>
-    <h3 class="subtitle">
-      <%= article.subtitle %>
-    </h3>
-    <div class="content">
-    <%= article.content %>
-    </div>
-    <%= link_to 'bouton +', article_path(article) %>
+<div class="visual" >
+  <h1 id='catch'>Mais qu'est-ce que je fais là ?</h1>
+</div>
+
+<div class="bandeau">
+  <div class="logocinema">
+    <img src="/assets/bannierefestivalcinemablanc.svg" class="img-responsive" width="100%" alt="logofest" title="logofest" />
   </div>
-<% end %>
+</div>
+<div class="nav">
+  <ul>  
+    <li><%= link_to "nouvel article", new_article_path %></li>
+    <li><a href="images/ocean.jpeg">home</a></li>
+    <li><a href="images/ocean.jpeg">exemple</a></li>
+  </ul>
+</div>
+
+<article class="container">
+  <% @articles.reverse.each do |article| %>
+    <div class="article">
+      <div class="date">
+        <%= article.created_at %>  
+      </div>
+      <h1 class="title">
+        <%= article.title %>
+      </h1>
+      <h3 class="subtitle">
+        <%= article.subtitle %>
+      </h3>
+      <div class="content">
+      <%= article.content %>
+      </div>
+      <%= link_to 'bouton +', article_path(article) %>
+    </div>
+  <% end %>
+</article>
