@@ -70,20 +70,25 @@ ul li a{
 	padding-left: 5%;
 }
 .container{
-	display: flex;
-	flex-direction: column;
 	position: relative;
 	width: 100%;
-	margin:0;
-	justify-content:center;
-	align-items:center;
+	margin: 0px;
+	display: block;
+	float:left;
+}
+.pellicule{
 }
 .article{
-	display: flex;
-	flex-direction: column;
-	justify-content:center;
-	align-items:flex-start;
-	width: 650px;
-	height: 380px;
-	background-image: url('pelliculemovies.svg');
+	background-image: url("pelliculemovies.svg");
+	background-size: cover;
+	margin: 0px auto;
+	position: relative;
+	height: 0px;
+	padding-top: 29%;
+	width: 50%;
+}
+.info{
+	position: absolute;
+	top: 15%;
+	left: 20%;
 }

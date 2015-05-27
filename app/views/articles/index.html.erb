@@ -18,19 +18,21 @@
 <article class="container">
   <% @articles.reverse.each do |article| %>
     <div class="article">
-      <div class="date">
-        <%= article.created_at %>  
+      <div class="info">
+        <div class="date">
+          <%= article.created_at %>  
+        </div>
+        <h1 class="title">
+          <%= article.title %>
+        </h1>
+        <h3 class="subtitle">
+          <%= article.subtitle %>
+        </h3>
+        <div class="content">
+        <%= article.content %>
+        </div>
+        <%= link_to 'bouton +', article_path(article) %>
       </div>
-      <h1 class="title">
-        <%= article.title %>
-      </h1>
-      <h3 class="subtitle">
-        <%= article.subtitle %>
-      </h3>
-      <div class="content">
-      <%= article.content %>
-      </div>
-      <%= link_to 'bouton +', article_path(article) %>
     </div>
   <% end %>
 </article>
