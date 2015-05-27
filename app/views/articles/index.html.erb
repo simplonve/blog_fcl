@@ -1,6 +1,9 @@
 <%= link_to "Nouvel article", new_article_path %>
 <% @articles.reverse.each do |article| %>
   <div class="article">
+    <div class="date">
+      <%= article.created_at %>  
+    </div>
     <h1 class="title">
       <%= article.title %>
     </h1>
