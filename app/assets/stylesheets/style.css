@@ -1,8 +1,27 @@
 @font-face{
-	font-family: 'Jennifer Lynne';
-	src:url('Jennifer Lynne.ttf') format('truetype');
+	font-family: 'Alice-Regular';
+	src:url('Alice-Regular.ttf') format('truetype');
 }
-
+@font-face{
+	font-family: 'BodoniFLF-Bold';
+	src:url('BodoniFLF-Bold.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'BodoniFLF-Roman';
+	src:url('BodoniFLF-Roman.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'Quattrocento-Regular';
+	src:url('Quattrocento-Regular.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'Raleway-Medium';
+	src:url('Raleway-Medium.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'Raleway-Light';
+	src:url('Raleway-Light.ttf') format('truetype');
+}
 html, body{
 	width: 100%;
 	margin: 0;
@@ -11,7 +30,7 @@ html, body{
 }
 
 .visual{
-	display:block;
+	display:flex;
 	position: relative;
 	width: 100%;
 	height: 95%;
@@ -44,16 +63,17 @@ html, body{
 ul{
 	display: flex;
 	padding-right:3%;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 	list-style-type: none;
 	width: 100%;
 }
 ul li{
-	margin: 5%;
+	margin: 1%;
 	align-content: center;
-	width: 50%;
+	width: 10%;
 	text-align: center;
+	min-width: 150px;
 }
 ul li a{
 	color: white;
@@ -81,24 +101,53 @@ ul li a{
 .day{
 	background-color: #ADAEB1;
 	width: 10%;
-	height: 50px;
+	height: 82px;
+	font-family: 'Alice-Regular';
+	font-size: 3.5em;
+	padding-left: 1%;
+	padding-top: 5px;
+	color: white;
 }
 .date{
 	background-color: #B1AFA8;
-	height: 50px;
+	height: 20px;
 	width: 20%;
+	font-family: 'Alice-Regular';
+	font-size: 2em;
+	color:rgba(255,0,0,0.5);
+	margin-left:-2%;
+}
+.year{
+	background-color: #B1AFA8;
+	height: 60px;
+	width: 100%;
+	font-family: 'Alice-Regular';
+	font-size: 2em;
+	color:black;
+	margin-top: -13%;
+	padding-bottom: 5%;
 }
 .title{
 	background-color: #FEFCF7;
 	width: 60%;
 	margin:0;
+	font-family: 'Quattrocento-Regular';
+	font-size: 3em;
+	font-weight: 300;
+	letter-spacing: 2.5px;
 }
 .subtitle{
 	margin-left:30%;
 	margin-right:10%;
+	font-family: 'Alice-Regular';
+	font-size: 2em;
+	font-weight: 300;
 }
 .content{
 	margin-right:10%;
+	font-family: 'Raleway-Light';
+	font-size: 2em;
+	text-align: right;
 }
 .button{
 	float:right;
