@@ -17,17 +17,7 @@ html, body{
 	height: 95%;
 	float: left;
 }
-/*#catch{
-	font-family: 'Jennifer Lynne';
-	font-size: 250%;
-	text-align: right;
-	position: relative;
-	float: right;
-	margin-right: 5%;
-	margin-top: 30%; 
-	margin-bottom: 5%;
-}
-*/.bandeau{
+.bandeau{
 	display:block;
 	position: relative;
 	width: 100%;
@@ -81,13 +71,7 @@ ul li a{
 .pellicule{
 }
 .article{
-	background-image: url("pelliculemovies.svg");
-	background-size: cover;
-	margin: 0px auto;
-	position: relative;
-	height: 0px;
-	padding-top: 29%;
-	width: 50%;
+	width: 65%;
 }
 .info{
 	position: absolute;
