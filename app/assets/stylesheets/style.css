@@ -68,5 +68,43 @@ ul li a{
 	display: block;
 	float:left;
 }
-
+.article{
+	width: 65%;
+	position: relative;
+	float : right;
+}
+.info{
+	display: flex;
+	justify-content: flex-start ;
+	align-items: flex-start;
+}
+.day{
+	background-color: #ADAEB1;
+	width: 10%;
+	height: 50px;
+}
+.date{
+	background-color: #B1AFA8;
+	height: 50px;
+	width: 20%;
+}
+.title{
+	background-color: #FEFCF7;
+	width: 60%;
+	margin:0;
+}
+.subtitle{
+	margin-left:30%;
+	margin-right:10%;
+}
+.content{
+	margin-right:10%;
+}
+.button{
+	float:right;
+	margin-right: 5%;
+	font-size: 2em;
+	color: red;
+	text-decoration: none;
+}
 

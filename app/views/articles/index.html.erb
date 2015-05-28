@@ -22,22 +22,26 @@
         <div class="day">
             <%= article.day %>
         </div>
+        <div class="date">
           <div class="month">
-            <%= article.month %>
-        </div>
-         <div class="year">
-            <%= article.year %>
-        </div>            
+              <%= article.month %>
+          </div>
+           <div class="year">
+              <%= article.year %>
+          </div>
+        </div>             
         <h1 class="title">
           <%= article.title %>
         </h1>
-        <h3 class="subtitle">
-          <%= article.subtitle %>
-        </h3>
-        <div class="content">
-        <%= article.content %>
-        </div>
-        <%= link_to 'bouton +', article_path(article) %>
+      </div> 
+      <h3 class="subtitle">
+        <%= article.subtitle %>
+      </h3>
+      <div class="content">
+      <%= article.content %>
+      </div>
+      <div class="button">
+        <%= link_to '+', article_path(article) %>
       </div>
     </div>
   <% end %>
