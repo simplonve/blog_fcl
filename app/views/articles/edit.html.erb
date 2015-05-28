@@ -2,7 +2,18 @@
 	<h1>Editer l'article</h1>
 	<div class="formulaire">
 		<%= form_for :article, url: article_path(@article), method: :patch do |f| %>
-		  
+		  <p>
+		    <%= f.label :jour %><br>
+		    <%= f.text_field :day %>
+		  </p>
+		   <p>
+		    <%= f.label :mois %><br>
+		    <%= f.text_field :month %>
+		  </p>
+		   <p>
+		    <%= f.label :année %><br>
+		    <%= f.text_field :year %>
+		  </p> 
 		  <p>
 		    <%= f.label :titre %><br>
 		    <%= f.text_field :title %>

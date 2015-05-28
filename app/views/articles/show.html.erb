@@ -1,7 +1,13 @@
 <div class="article">
-	<p class="date">	
-      <%= @article.created_at %>  
-    </p>
+	<div class="day">
+       <%= article.day %>
+     </div>
+    <div class="month">
+       <%= article.month %>
+      </div>
+    <div class="year">
+        <%= article.year %>
+    </div>            
 	<p class="title">
 	  <%= @article.title %>
 	</p>

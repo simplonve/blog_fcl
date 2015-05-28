@@ -19,9 +19,15 @@
   <% @articles.reverse.each do |article| %>
     <div class="article">
       <div class="info">
-        <div class="date">
-          <%= article.created_at %>  
+        <div class="day">
+            <%= article.day %>
         </div>
+          <div class="month">
+            <%= article.month %>
+        </div>
+         <div class="year">
+            <%= article.year %>
+        </div>            
         <h1 class="title">
           <%= article.title %>
         </h1>
