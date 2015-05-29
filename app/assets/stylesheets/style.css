@@ -36,6 +36,13 @@ html, body{
 	height: 95%;
 	float: left;
 }
+.svgrotate {
+	display:block;
+	position:absolute;
+	margin-top:15%;
+	margin-left: 0.5%;
+	opacity: 0.5;
+}
 .bandeau{
 	display:block;
 	position: relative;
@@ -43,7 +50,7 @@ html, body{
 	float: left;
 	background-color: black;
 	margin:0;
-	margin-top: -10%;
+	margin-top: 0%;
 }
 .nav{
 	display:flex;
@@ -59,6 +66,8 @@ html, body{
 	padding-bottom: 1%;
 	height: 30px;
 	box-shadow: 0px 0px 500px black;
+	font-family: 'Raleway-Light';
+
 }
 ul{
 	display: flex;
@@ -92,67 +101,78 @@ ul li a{
 	width: 65%;
 	position: relative;
 	float : right;
+	margin-bottom: 2%;
+	box-shadow: 0px 0px 500px black;
+	text-align: justify;
 }
 .info{
 	display: flex;
 	justify-content: flex-start ;
 	align-items: flex-start;
+	background-color: #ADAEB1;
+	width: 20%;
 }
 .day{
-	background-color: #ADAEB1;
+	/*background-color: #ADAEB1;*/
 	width: 10%;
 	height: 82px;
 	font-family: 'Alice-Regular';
-	font-size: 3.5em;
+	font-size: 350%;
 	padding-left: 1%;
 	padding-top: 5px;
 	color: white;
+	display:flex;
 }
 .date{
-	background-color: #B1AFA8;
+	/*background-color: #B1AFA8;*/
 	height: 20px;
 	width: 20%;
 	font-family: 'Alice-Regular';
-	font-size: 2em;
+	font-size: 200%;
 	color:rgba(255,0,0,0.5);
 	margin-left:-2%;
+	display:flex;
 }
 .year{
-	background-color: #B1AFA8;
+	/*background-color: #B1AFA8;*/
 	height: 60px;
 	width: 100%;
 	font-family: 'Alice-Regular';
-	font-size: 2em;
+	font-size: 200%;
 	color:black;
 	margin-top: -13%;
 	padding-bottom: 5%;
+	display:flex;
 }
 .title{
 	background-color: #FEFCF7;
+	padding-right: 340%;
 	width: 60%;
 	margin:0;
 	font-family: 'Quattrocento-Regular';
-	font-size: 3em;
+	font-size: 300%;
 	font-weight: 300;
 	letter-spacing: 2.5px;
+	margin-left: 72%;
+	display: flex;
 }
 .subtitle{
-	margin-left:30%;
+	margin-left:21%;
 	margin-right:10%;
 	font-family: 'Alice-Regular';
-	font-size: 2em;
+	font-size: 200%;
 	font-weight: 300;
 }
 .content{
 	margin-right:10%;
 	font-family: 'Raleway-Light';
-	font-size: 2em;
+	font-size: 200%;
 	text-align: right;
 }
 .button{
 	float:right;
 	margin-right: 5%;
-	font-size: 2em;
+	font-size: 200%;
 	color: red;
 	text-decoration: none;
 }
