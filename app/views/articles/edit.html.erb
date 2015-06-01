@@ -9,15 +9,16 @@
 		  <% end %>
 		  <p>
 		    <%= f.label :jour %><br>
-		    <%= f.text_field :day %>
+		    <%= f.select :day, (1..31).to_a %>
 		  </p>
-		   <p>
+		     <p>
 		    <%= f.label :mois %><br>
-		    <%= f.text_field :month %>
+		    <%= f.select :month, ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"] %>
 		  </p>
+	
 		   <p>
 		    <%= f.label :année %><br>
-		    <%= f.text_field :year %>
+		    <%= f.select :year, ["2015", "2016", "2017"] %>
 		  </p> 
 		  <p>
 		    <%= f.label :titre %><br>
