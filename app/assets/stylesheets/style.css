@@ -61,12 +61,13 @@ html, body{
 	float: left;
 	margin-top:2%;
 	margin-bottom:2%;
-	background-color: rgba(17,102,243,0.3);
+	background-color: #ADAEB1;
 	padding-top: 1%;
 	padding-bottom: 1%;
 	height: 30px;
 	box-shadow: 0px 0px 500px black;
 	font-family: 'Raleway-Light';
+	font-size: 140%;
 
 }
 ul{
@@ -165,15 +166,15 @@ ul li a{
 	margin-left:27%;
 	margin-right:10%;
 	font-family: 'Alice-Regular';
-	font-size: 200%;
+	font-size: 150%;
 	font-weight: 300;
 }
 .content{
 	margin-right:10%;
 	margin-left: 9%;
 	font-family: 'Raleway-Light';
-	font-size: 150%;
-	text-align: left;
+	font-size: 110%;
+	text-align: justify;
 }
 .button{
 	float:right;
@@ -197,9 +198,58 @@ ul li a{
 	justify-content: space-between;
 	align-items: center;
 }
-
+.catch {
+	background: url('logofestivalcinemablanc.svg');
+	width: 25%;
+	max-width: 300px;
+	min-width: 250px;
+	/*height: 10%;*/
+	display: flex;
+	margin-left: 3%;
+	margin-top: 20px;
+	position: relative;
+	flex-direction:column;
+}
 .submit_btn{
 	background-color: #FEFCF7; 
 	margin-bottom: 2%;
 }
+.catchnumber {
+	width: 100%;
+	font-family: 'Raleway';
+	font-size: 130%;
+	margin-top: 5px;
+	justify-content: flex-start;
+}
+.catchplace {
+	width: 100%;
+	font-family: 'Alice-Regular';
+	font-size: 300%;
+	color: grey;
+	/*margin-left: 10%;*/
+	text-align: center;
+	display: inline-block;
+	justify-content: center;
+	margin-top: -13px;
+}
+.catchdate {
+	width: 100%;
+	font-family: 'Raleway';
+	font-size: 130%;
+	text-align: right;
+	margin-bottom: 5px;
+	margin-top: -10px;
+	justify-content: flex-end;
+}
+@media (max-width: 1200px) {
+html { font-size: 1em!important; }
+}
 
+@media (max-width: 992px) {
+html { font-size: 0.9em!important; }
+}
+@media (max-width: 880px) {
+html { font-size: 0.8em!important; }
+}
+@media (max-width: 768px) {
+html { font-size: 0.8em!important; }
