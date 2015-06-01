@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
 	def create
 		@article = Article.new(article_params)
    		if @article.save
-        redirect_to articles_path
+        redirect_to articles_path, notice: "L'article a été créé"
       else
       render 'new'
       end

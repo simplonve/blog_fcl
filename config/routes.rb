@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :articles
+  mount Ckeditor::Engine => '/ckeditor'
 
   
   # The priority is based upon order of creation: first created -> highest priority.

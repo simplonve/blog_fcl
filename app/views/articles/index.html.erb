@@ -40,7 +40,7 @@
         <%= article.subtitle %>
       </h3>
       <div class="content">
-      <%= article.content %>
+      <%= article.content.html_safe %>
       </div>
       <div class="button">
         <%= link_to '+', article_path(article) %>
