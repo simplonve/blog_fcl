@@ -114,22 +114,23 @@ ul li a{
 }
 .day{
 	background-color: #ADAEB1;
-	width: 10%;
+	width: 8%;
 	font-family: 'Alice-Regular';
-	font-size: 350%;
+	font-size: 400%;
 	padding-left: 1%;
-	padding-top: 5px;
+	padding-top: 4px;
+	padding-bottom: 15px;
 	color: white;
-/*	display:flex;
-*/}
+	display:flex;
+}
 .date{
-	background-color: green;
-	width: 20%;
+	background-color: white;
+	width: 18%;
 	font-family: 'Alice-Regular';
 	font-size: 200%;
 	color:rgba(255,0,0,0.5);
-	margin-left:-2%;
-	/*display:flex;*/
+	margin-left:0%;
+	
 }
 .year{
 	/*background-color: #B1AFA8;*/
@@ -138,8 +139,8 @@ ul li a{
 	font-family: 'Alice-Regular';
 	font-size: 100%;
 	color:black;
-	margin-top: -13%;
-	padding-bottom: 5%;
+	margin-top: -3%;
+	padding-bottom: 0%;
 	/*display:flex;*/
 }
 .month{
@@ -149,7 +150,7 @@ ul li a{
 .title{
 	background-color: #FEFCF7;
 	/*padding-right: 340%;*/
-	width: 60%;
+	width: 64%;
 	margin:0;
 	font-family: 'Alice-Regular';
 	font-size: 300%;
@@ -159,7 +160,9 @@ ul li a{
 	/*display: flex;*/
 }
 .subtitle{
-	margin-left:21%;
+	display: flex;
+	width: 64%;
+	margin-left:27%;
 	margin-right:10%;
 	font-family: 'Alice-Regular';
 	font-size: 200%;
@@ -167,9 +170,10 @@ ul li a{
 }
 .content{
 	margin-right:10%;
+	margin-left: 9%;
 	font-family: 'Raleway-Light';
 	font-size: 150%;
-	text-align: right;
+	text-align: left;
 }
 .button{
 	float:right;
