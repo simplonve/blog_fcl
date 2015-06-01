@@ -193,3 +193,9 @@ ul li a{
 	justify-content: space-between;
 	align-items: center;
 }
+
+.submit_btn{
+	background-color: #FEFCF7; 
+	margin-bottom: 2%;
+}
+

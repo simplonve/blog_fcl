@@ -1,16 +1,16 @@
 <div class="form">
 	<h1>Nouvel article</h1>
 	<% if @article.errors.any? %>
-          <div id="error_explanation">
-              <%= pluralize(@article.errors.count, "erreur") %> : Impossible de sauvegarder l'article, veuillez remplir tous les champs.
-          	<ul>
+        <div id="error_explanation">
+            <%= pluralize(@article.errors.count, "erreur") %> : Impossible de sauvegarder l'article, veuillez remplir tous les champs.
+        	<ul>
 			<% @article.errors.full_messages.each do |msg| %>
           		<li><%= msg %></li>
-       		 <% end %>
+       		<% end %>
        		</ul> 
-          </div>
-      <% end %>
-		<%= form_for :article, url: articles_path  do |f| %>
+        </div>
+    <% end %>
+	<%= form_for :article, url: articles_path  do |f| %>
 		   <p class="selecteur">
 		    <%= f.label :"jour" %>
 		    <%= f.select :day, (1..31).to_a %>
@@ -31,8 +31,6 @@
 		    <%= f.label :texte %><br>
 		    <%= f.text_area :content, size: "60x12" %>
 		  </p>
-		  <p>
-		    <%= f.submit 'Enregistrer le nouvel article' %>
-		  </p>
-		<% end %>
+		    <%= f.submit 'Enregistrer le nouvel article', class: "submit_btn" %>
+	<% end %>
 </div>
