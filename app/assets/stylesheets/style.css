@@ -61,12 +61,13 @@ html, body{
 	float: left;
 	margin-top:2%;
 	margin-bottom:2%;
-	background-color: rgba(17,102,243,0.3);
+	background-color: #ADAEB1;
 	padding-top: 1%;
 	padding-bottom: 1%;
 	height: 30px;
 	box-shadow: 0px 0px 500px black;
 	font-family: 'Raleway-Light';
+	font-size: 140%;
 
 }
 ul{
