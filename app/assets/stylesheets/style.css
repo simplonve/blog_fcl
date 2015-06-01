@@ -174,7 +174,7 @@ ul li a{
 	margin-left: 9%;
 	font-family: 'Raleway-Light';
 	font-size: 150%;
-	text-align: left;
+	text-align: justify;
 }
 .button{
 	float:right;
@@ -199,7 +199,7 @@ ul li a{
 	align-items: center;
 }
 .catch {
-	background-color: #FEFCF7;
+	background: url('logofestivalcinemablanc.svg');
 	width: 25%;
 	max-width: 300px;
 	min-width: 250px;
@@ -230,6 +230,7 @@ ul li a{
 	text-align: center;
 	display: inline-block;
 	justify-content: center;
+	margin-top: -13px;
 }
 .catchdate {
 	width: 100%;
@@ -237,6 +238,7 @@ ul li a{
 	font-size: 130%;
 	text-align: right;
 	margin-bottom: 5px;
+	margin-top: -10px;
 	justify-content: flex-end;
 }
 @media (max-width: 1200px) {
