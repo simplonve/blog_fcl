@@ -1,7 +1,6 @@
-<div class="article">
+<div class="form">
 	<h1>Nouvel article</h1>
-	<div class="formulaire">
-	  <% if @article.errors.any? %>
+	<% if @article.errors.any? %>
           <div id="error_explanation">
               <%= pluralize(@article.errors.count, "erreur") %> : Impossible de sauvegarder l'article, veuillez remplir tous les champs.
           	<ul>
@@ -40,5 +39,4 @@
 		    <%= f.submit %>
 		  </p>
 		<% end %>
-	</div>
 </div>
