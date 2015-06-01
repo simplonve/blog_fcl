@@ -1,42 +1,40 @@
-<div class="article">
+<div class="form">
 	<h1>Editer l'article</h1>
 	<div class="formulaire">
 		<%= form_for :article, url: article_path(@article), method: :patch do |f| %>
 			<% if @article.errors.any? %>
 			    <div id="error_explanation">
 			        <%= pluralize(@article.errors.count, "erreur") %> : Impossible de sauvegarder l'article, veuillez remplir tous les champs
+			        <ul>
+						<% @article.errors.full_messages.each do |msg| %>
+          				<li><%= msg %></li>
+       				 <% end %>
+       				</ul> 
 			    </div>
 		  <% end %>
-		  <p>
-		    <%= f.label :jour %><br>
+		  <p class="selecteur">
+		    <%= f.label :jour %>
 		    <%= f.select :day, (1..31).to_a %>
-		  </p>
-		     <p>
-		    <%= f.label :mois %><br>
+		    <%= f.label :mois %>
 		    <%= f.select :month, ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"] %>
-		  </p>
-	
-		   <p>
-		    <%= f.label :année %><br>
+		    <%= f.label :année %>
 		    <%= f.select :year, ["2015", "2016", "2017"] %>
 		  </p> 
 		  <p>
 		    <%= f.label :titre %><br>
-		    <%= f.text_field :title %>
+		    <%= f.text_area :title, size: "60x1" %>
 		  </p>
-		 
 		  <p>
 		    <%= f.label :"sous-titre" %><br>
-		    <%= f.text_area :subtitle %>
+		    <%= f.text_area :subtitle, size: "60x2" %>
 		  </p>
-
-		   <p>
+		  <p>
 		    <%= f.label :texte %><br>
-		    <%= f.text_area :content %>
+		    <%= f.text_area :content, size: "60x12" %>
 		  </p>
 		 
 		  <p>
-		    <%= f.submit %>
+		    <%= f.submit 'Enregistrer les modifications' %>
 		  </p>
 		<% end %>
 	</div>

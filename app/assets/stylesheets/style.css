@@ -182,4 +182,24 @@ ul li a{
 	color: red;
 	text-decoration: none;
 }
+.form{
+	width: 45%;
+	box-shadow: 0px 0px 500px black;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2%;
+}
+.selecteur{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.submit_btn{
+	background-color: #FEFCF7; 
+	margin-bottom: 2%;
+}
 
