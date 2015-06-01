@@ -173,13 +173,8 @@ ul li a{
 	margin-right:10%;
 	margin-left: 9%;
 	font-family: 'Raleway-Light';
-<<<<<<< HEAD
-	font-size: 150%;
-	text-align: justify;
-=======
 	font-size: 110%;
-	text-align: left;
->>>>>>> fb171a961dac9eecdc44be8774c7c801bc3d62f8
+	text-align: justify;
 }
 .button{
 	float:right;
