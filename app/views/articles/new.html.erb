@@ -3,7 +3,12 @@
 	<div class="formulaire">
 	  <% if @article.errors.any? %>
           <div id="error_explanation">
-              <%= pluralize(@article.errors.count, "erreur") %> : Impossible de sauvegarder l'article, veuillez remplir tous les champs
+              <%= pluralize(@article.errors.count, "erreur") %> : Impossible de sauvegarder l'article, veuillez remplir tous les champs.
+          	<ul>
+			<% @article.errors.full_messages.each do |msg| %>
+          		<li><%= msg %></li>
+       		 <% end %>
+       		</ul> 
           </div>
       <% end %>
 		<%= form_for :article, url: articles_path  do |f| %>
