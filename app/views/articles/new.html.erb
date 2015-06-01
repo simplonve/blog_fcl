@@ -11,16 +11,12 @@
           </div>
       <% end %>
 		<%= form_for :article, url: articles_path  do |f| %>
-		   <p>
-		    <%= f.label :"jour" %><br>
+		   <p class="selecteur">
+		    <%= f.label :"jour" %>
 		    <%= f.select :day, (1..31).to_a %>
-		  </p>
-		     <p>
-		    <%= f.label :mois %><br>
+		    <%= f.label :mois %>
 		    <%= f.select :month, ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"] %>
-		  </p>
-		   <p>
-		    <%= f.label :année %><br>
+		    <%= f.label :année %>
 		    <%= f.select :year, ["2015", "2016", "2017"] %>
 		  </p> 
 		  <p>
@@ -36,7 +32,7 @@
 		    <%= f.text_area :content, size: "60x12" %>
 		  </p>
 		  <p>
-		    <%= f.submit %>
+		    <%= f.submit 'Enregistrer le nouvel article' %>
 		  </p>
 		<% end %>
 </div>

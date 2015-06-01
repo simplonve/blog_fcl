@@ -188,3 +188,8 @@ ul li a{
 	align-items: center;
 	margin-top: 2%;
 }
+.selecteur{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
