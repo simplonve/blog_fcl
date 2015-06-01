@@ -2,6 +2,11 @@
 	<h1>Editer l'article</h1>
 	<div class="formulaire">
 		<%= form_for :article, url: article_path(@article), method: :patch do |f| %>
+			<% if @article.errors.any? %>
+			    <div id="error_explanation">
+			        <%= pluralize(@article.errors.count, "erreur") %> : Impossible de sauvegarder l'article, veuillez remplir tous les champs
+			    </div>
+		  <% end %>
 		  <p>
 		    <%= f.label :jour %><br>
 		    <%= f.text_field :day %>

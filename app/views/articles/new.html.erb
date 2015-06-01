@@ -1,18 +1,24 @@
 <div class="article">
 	<h1>Nouvel article</h1>
 	<div class="formulaire">
+	  <% if @article.errors.any? %>
+          <div id="error_explanation">
+              <%= pluralize(@article.errors.count, "erreur") %> : Impossible de sauvegarder l'article, veuillez remplir tous les champs
+          </div>
+      <% end %>
 		<%= form_for :article, url: articles_path  do |f| %>
 		   <p>
 		    <%= f.label :jour %><br>
-		    <%= f.text_field :day %>
+		    <%= f.select :day, (1..31).to_a %>
 		  </p>
-		   <p>
+		     <p>
 		    <%= f.label :mois %><br>
-		    <%= f.text_field :month %>
+		    <%= f.select :month, ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"] %>
 		  </p>
+	
 		   <p>
 		    <%= f.label :année %><br>
-		    <%= f.text_field :year %>
+		    <%= f.select :year, ["2015", "2016", "2017"] %>
 		  </p> 
 		  <p>
 		    <%= f.label :titre %><br>
