@@ -1,27 +1,31 @@
 <div class="article">
-	<div class="day">
-       <%= @article.day %>
-     </div>
-    <div class="month">
-       <%= @article.month %>
-      </div>
-    <div class="year">
-        <%= @article.year %>
-    </div>            
-	<p class="title">
-	  <%= @article.title %>
-	</p>
-	 
+	<div class='info'>
+		<div class="day">
+      	 <%= @article.day %>
+     	</div>
+    	<div class='date'>
+   			<div class="month">
+       			<%= @article.month %>
+     		</div>
+    		<div class="year">
+       			<%= @article.year %>
+    		</div>
+    	</div>            
+		<p class="title">
+	 		<%= @article.title %>
+		</p>
+	</div>	 
 	<p class="subtitle">
 	  <%= @article.subtitle %>
 	</p>
-
 	<p class="content">
 	  <%= @article.content.html_safe %>
 	</p>
-	<%= link_to "Editer", edit_article_path(@article) %>
-	<%= link_to 'Supprimer', article_path(@article),
-              method: :delete,
-              data: { confirm: 'Etes-vous sûr ?' } %>
-    <%= link_to "Retour page d'accueil", articles_path %>
+    <%= link_to (image_tag('home.png')), articles_path, :class => "home" %>
+    <div class='icon'>
+		<%= link_to (image_tag('edit.png')), edit_article_path(@article) %>
+		<%= link_to (image_tag('delete.png')), article_path(@article),
+	              method: :delete,
+	              data: { confirm: 'Etes-vous sûr ?' } %>
+	</div>              
 </div>

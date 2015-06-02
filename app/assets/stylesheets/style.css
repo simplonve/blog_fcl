@@ -255,6 +255,13 @@ ul li a{
 	margin-top: -10px;
 	justify-content: flex-end;
 }
+.icon{
+	float: right;
+	padding-right: 2%;
+}
+.home{
+	margin-left: 48%;
+}
 @media (max-width: 1200px) {
 html { font-size: 1em!important; }
 }
