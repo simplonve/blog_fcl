@@ -116,13 +116,16 @@ ul li a{
 .day{
 	background-color: #ADAEB1;
 	width: 8%;
+	height: 80px;
+	min-height: 60px;
+	min-width: 60px;
 	font-family: 'Alice-Regular';
-	font-size: 400%;
-	padding-left: 1%;
-	padding-top: 4px;
-	padding-bottom: 15px;
+	font-size: 4em;
+	/*padding-top: 4px;*/
+	/*padding-bottom: 15px;*/
 	color: white;
 	display:flex;
+	justify-content: center;
 }
 .date{
 	background-color: white;
@@ -131,39 +134,44 @@ ul li a{
 	font-size: 200%;
 	color:rgba(255,0,0, 1);
 	margin-left:0%;
-	
+	padding-left: 1%;
+	height: 80px;
+	min-height: 60px;
+	min-width: 100px;
+	max-width: 120px;
 }
 .year{
 	/*background-color: #B1AFA8;*/
 	height: 60px;
 	width: 100%;
 	font-family: 'Alice-Regular';
-	font-size: 100%;
-	color:black;
-	margin-top: -3%;
-	padding-bottom: 0%;
+	font-size: 1.6em;
+	color:grey;
+	margin-top: -9%;
+	/*padding-bottom: 0%;*/
 	/*display:flex;*/
 }
 .month{
-	font-size: 100%;
+	font-size: 0.8em;
+	margin-top: 5%;
 }
 
 .title{
 	background-color: #FEFCF7;
-	/*padding-right: 340%;*/
+	padding-left: 2%;
 	width: 64%;
 	margin:0;
 	font-family: 'Alice-Regular';
 	font-size: 300%;
 	font-weight: 300;
 	/*letter-spacing: 1px;*/
-	/*margin-left: 72%;*/
+	/*margin-left: 2%;*/
 	/*display: flex;*/
 }
 .subtitle{
 	display: flex;
 	width: 64%;
-	margin-left:27%;
+	margin-left:26%;
 	margin-right:10%;
 	font-family: 'Alice-Regular';
 	font-size: 150%;
@@ -221,7 +229,7 @@ ul li a{
 	width: 100%;
 	font-family: 'Raleway';
 	font-size: 130%;
-	margin-top: 5px;
+	margin-top: 2px;
 	justify-content: flex-start;
 }
 .catchplace {
