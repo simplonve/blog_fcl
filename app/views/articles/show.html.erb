@@ -18,9 +18,9 @@
 	<p class="subtitle">
 	  <%= @article.subtitle %>
 	</p>
-	<p class="content">
+	<div class="content">
 	  <%= @article.content.html_safe %>
-	</p>
+	</div>
     <%= link_to (image_tag('home.png')), articles_path, :class => "home" %>
     <div class='icon'>
 		<%= link_to (image_tag('edit.png')), edit_article_path(@article) %>
