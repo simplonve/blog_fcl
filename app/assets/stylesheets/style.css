@@ -79,8 +79,8 @@ ul{
 	width: 100%;
 }
 ul li{
-	margin-right: 4%;
-	margin-left: -4%;
+	margin-right: 0%;
+	margin-left: 0%;
 	align-content: center;
 	width: 8%;
 	text-align: center;
