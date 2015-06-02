@@ -17,7 +17,7 @@
 	</p>
 
 	<p class="content">
-	  <%= @article.content %>
+	  <%= @article.content.html_safe %>
 	</p>
 	<%= link_to "Editer", edit_article_path(@article) %>
 	<%= link_to 'Supprimer', article_path(@article),
