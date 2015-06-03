@@ -35,15 +35,19 @@
 			<%= f.submit 'Envoyer le commentaire', class: "submit_btn" %>
 		<% end %>
 	</div>
-	<div class="comment_list">	 
-		<h5>Commentaires :</h5>
+	<table class="comment_list">	 
+		<th>Commentaires :</th>
+		<tr>
+			<td>Nom</td>
+			<td>Commentaires</td>
+		</tr>
 		<% @article.comments.each do |comment| %>
-			<div class="comment">
-				<h6>Nom :</h6><%= comment.name %>
-				<h6>Commentaire :</h6><%= comment.body %>
-			</div>
+			<tr>
+				<td><%= comment.name %></td>
+				<td><%= comment.body %></td>
+			</tr>
 		<% end %>
-	</div>	
+	</table>	
     <%= link_to (image_tag('home.png')), articles_path, :class => "home" %>
     <div class='icon'>
 		<%= link_to (image_tag('edit.png')), edit_article_path(@article) %>
