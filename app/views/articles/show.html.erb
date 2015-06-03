@@ -21,6 +21,29 @@
 	<div class="content">
 	  <%= @article.content.html_safe %>
 	</div>
+	<div class="comment_form">
+	<h5>Ajouter un commentaire : </h5>
+		<%= form_for ([@article, @article.comments.build]) do |f| %>
+			<p>
+			    <%= f.label :nom %><br>
+			    <%= f.text_field :name %>
+			</p>
+			<p>
+			    <%= f.label :commentaire %><br>
+			    <%= f.text_area :body, size: "60x4" %>
+			</p>
+			<%= f.submit 'Envoyer le commentaire', class: "submit_btn" %>
+		<% end %>
+	</div>
+	<div class="comment_list">	 
+		<h5>Commentaires :</h5>
+		<% @article.comments.each do |comment| %>
+			<div class="comment">
+				<h6>Nom :</h6><%= comment.name %>
+				<h6>Commentaire :</h6><%= comment.body %>
+			</div>
+		<% end %>
+	</div>	
     <%= link_to (image_tag('home.png')), articles_path, :class => "home" %>
     <div class='icon'>
 		<%= link_to (image_tag('edit.png')), edit_article_path(@article) %>
