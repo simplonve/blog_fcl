@@ -257,7 +257,12 @@ ul li a{
 .home{
 	margin-left: 48%;
 }
-
+.comment_form{
+	margin-left: 9%;
+}
+.comment_list{
+	margin-left: 9%;
+}
 .ancre {
 	position: absolute;
 	margin-left: 5%;
