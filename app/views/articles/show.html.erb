@@ -43,8 +43,8 @@
 		</tr>
 		<% @article.comments.each do |comment| %>
 			<tr>
-				<td><%= comment.name %></td>
-				<td><%= comment.body %></td>
+				<td class="nom"><%= comment.name %></td>
+				<td ><%= comment.body %></td>
 			</tr>
 		<% end %>
 	</table>	
