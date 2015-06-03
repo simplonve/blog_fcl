@@ -36,13 +36,6 @@ html, body{
 	height: 95%;
 	float: left;
 }
-.svgrotate {
-	display:block;
-	position:absolute;
-	margin-top:15%;
-	margin-left: 0.5%;
-	opacity: 0.5;
-}
 .bandeau{
 	display:block;
 	position: relative;
