@@ -22,11 +22,8 @@
 	font-family: 'Raleway-Light';
 	src:url('Raleway-Light.ttf') format('truetype');
 }
-@media screen and (min-width: 992px) and (max-width: 1600px) {
-	/*body { 
-		font-size: 3em;
-		 }*/
-		 .article{
+@media screen and (min-width: 992px) {
+		.article{
 		 width:65%;
 		 margin-right: 3%;
 		}
@@ -59,6 +56,12 @@
 		}
 		.nav{
 			height: 30px;
+		}
+		.form{
+			width: 45%;
+		}
+		.text_field{
+			width: 60%;
 		}
 } 
 
@@ -100,13 +103,17 @@
 		.nav{
 			height: 30px;
 		}
+		.form{
+			width: 80%;
+		}
+		.text_field{
+			width: 60%;
+		}
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 880px) {
-	/*body { 
-		font-size: 0.6em;
-		 }*/
-		 .article{
+@media screen and (min-width: 320px) and (max-width: 880px) {
+		.article{
 		 width:90%;
 		 margin-right: 1%;
 		}
@@ -140,12 +147,15 @@
 		.nav{
 			height: 30px;
 		}
+		.form{
+			width: 90%;
+		}
+		.text_field{
+			width: 80%;
+		}
 }
 
-@media screen and (max-width:768px) {
-	/*body {
-		font-size: 0.6;
-	}*/
+@media screen and (max-width:320px) {
 	.article {
 		width:99%;
 		margin-right: 0%;
@@ -177,10 +187,21 @@
 	.year {
 	font-size: 1.5em;
 	}
+	.form{
+	width: 100%;
+	}
 	ul {
 	flex-direction : column;
 	align-items : flex-start;
 	}
+	.selecteur{
+	flex-direction : column;
+	align-items : flex-start;
+	}
+	.text_field{
+		width: 95%;
+	}
+
 }
 html, body{
 	width: 100%;
@@ -188,7 +209,6 @@ html, body{
 	padding: 0;
 	position: absolute;
 }
-
 .visual{
 	display:flex;
 	position: relative;
@@ -335,15 +355,15 @@ ul li a{
 	text-decoration: none;
 }
 .form{
-	width: 45%;
 	box-shadow: 0px 0px 500px black;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 2%;
-
+	margin-top: 1%;
+	padding: 2%;
+	font-family: 'Alice-Regular';
 }
 .selecteur{
 	display: flex;
@@ -366,6 +386,7 @@ ul li a{
 .submit_btn{
 	background-color: #FEFCF7; 
 	margin-bottom: 2%;
+	font-family: 'Alice-Regular';
 }
 .catchnumber {
 	width: 100%;
